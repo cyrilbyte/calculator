@@ -1,0 +1,66 @@
+/* style.css */
+body {
+    margin: 0;
+    background: linear-gradient(to right, #283cff, #45a247); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.calculator {
+    background-color: #000; /* Dark background */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    background-color: #1a1a1a; /* Darker display background */
+    color: white;
+    text-align: right;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display #previous-operand {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, .75);
+}
+
+.display #current-operand {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    cursor: pointer;
+    background-color: #333; /* Dark button background */
+    color: white;
+    outline: none;
+    border: 1px solid #444; /* Darker border */
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.buttons button:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.buttons button:active {
+    background-color: #555; /* Even lighter on click */
+}
